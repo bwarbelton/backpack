@@ -94,6 +94,55 @@ backpack.baseUrl = $(location).attr('protocol') + '//'
 		+ $(location).attr('host');
 backpack.childDataAccess = childDataAccess;
 
+function registration() {
+	$("#registrationDiv").attr("style", "display:block");
+	$("#addressDiv").attr("style", "display:block");
+	$("#backpackDiv").attr("style", "display:none");
+	$("#haircutDiv").attr("style", "display:none");
+	$("#healthcheckDiv").attr("style", "display:none");
+	$("#childListDiv").attr("style", "display:none");
+	clearDetails();
+}
+
+function checkBackpack() {
+	$("#registrationDiv").attr("style", "display:none");
+	$("#addressDiv").attr("style", "display:none");
+	$("#backpackDiv").attr("style", "display:block");
+	$("#haircutDiv").attr("style", "display:none");
+	$("#healthcheckDiv").attr("style", "display:none");
+	$("#childListDiv").attr("style", "display:none");
+	clearDetails();
+}
+
+function checkHaircut() {
+	$("#registrationDiv").attr("style", "display:none");
+	$("#addressDiv").attr("style", "display:none");
+	$("#backpackDiv").attr("style", "display:none");
+	$("#haircutDiv").attr("style", "display:block");
+	$("#healthcheckDiv").attr("style", "display:none");
+	$("#childListDiv").attr("style", "display:none");
+	clearDetails();
+}
+
+function checkHealthcare() {
+	$("#registrationDiv").attr("style", "display:none");
+	$("#addressDiv").attr("style", "display:none");
+	$("#backpackDiv").attr("style", "display:none");
+	$("#haircutDiv").attr("style", "display:none");
+	$("#healthcheckDiv").attr("style", "display:block");
+	$("#childListDiv").attr("style", "display:none");
+	clearDetails();
+}
+
+function listAll() {
+	$("#registrationDiv").attr("style", "display:none");
+	$("#addressDiv").attr("style", "display:none");
+	$("#backpackDiv").attr("style", "display:none");
+	$("#haircutDiv").attr("style", "display:none");
+	$("#healthcheckDiv").attr("style", "display:none");
+	$("#childListDiv").attr("style", "display:block");	
+}
+
 function clearDetails() {
 	$("#childId").val("");
 	$("#firstName").val("");
