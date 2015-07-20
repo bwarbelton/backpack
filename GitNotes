@@ -1,0 +1,7 @@
+Because all files were pushed to Git there are some problems when running the web site on each developer laptop.
+
+Go to project properties/java build path/libraries and change the web library if necessary
+Go to project properties/project facets and change the java version to 1.7 or 1.8 if necessary
+
+change the db settings in src/mybatisConfig if necessary.
+
